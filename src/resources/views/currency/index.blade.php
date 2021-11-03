@@ -4,7 +4,7 @@
 @section('content')
 <div class="row" style="margin-top: 50px;">
     <div class="col" class="row">
-        <div class="card" style="min-height: 410px;">
+        <div class="card" style="min-height: 450px;">
             <div class="card-header">
                 <strong>MOEDA A SER CONVERTIDA</strong>
             </div>
@@ -78,7 +78,7 @@
     </div>
 
     <div class="col" class="row">
-        <div class="card" style="min-height: 410px;">
+        <div class="card" style="min-height: 450px;">
             <div class="card-header">
                 <strong>RESULTADO DA CONVERSÃO</strong>
             </div>
@@ -139,6 +139,7 @@
                 $('#result_conversion').append('<p>Moeda de destino: ' + response.currencyTo + '</p>');
                 $('#result_conversion').append('<p>Valor para conversão: ' + response.amount + '</p>');
                 $('#result_conversion').append('<p>Forma de pagamento: ' + response.paymentType + '</p>');
+                $('#result_conversion').append('<p>Valor da "Moeda de destino" usado para conversão: ' + response.quotation + '</p>');
                 $('#result_conversion').append('<p>Valor comprado em "Moeda de destino": ' + response.buyValue + '</p>');
                 $('#result_conversion').append('<p>Taxa de pagamento: ' + response.paymentFee + '</p>');
                 $('#result_conversion').append('<p>Taxa de conversão: ' + response.conversionFee + '</p>');
